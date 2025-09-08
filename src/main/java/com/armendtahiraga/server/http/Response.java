@@ -12,11 +12,11 @@ public class Response {
         this.statusCode = statusCode;
     }
 
-    public String getBody() {
+    public String setResponseData() {
         return responseData;
     }
 
-    public void setBody(String responseData) {
+    public void setResponseData(String responseData) {
         this.responseData = responseData;
     }
 }

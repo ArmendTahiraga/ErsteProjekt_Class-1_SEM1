@@ -5,12 +5,15 @@ import com.armendtahiraga.server.http.Response;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
         Request request = new Request();
         request.setMethod("GET");
+        request.setPath("http://server.com");
 
         Response response = new Response();
         response.setStatusCode(200);
-        response.setBody("Data");
+        response.setResponseData("Data");
+
+        System.out.println("Request Method: " + request.getMethod() + "||" + " Request Path: " + request.getPath());
+        System.out.println("Response Status Code: " + response.getStatusCode() + "||" + " Response Data: " + response.setResponseData());
     }
 }
